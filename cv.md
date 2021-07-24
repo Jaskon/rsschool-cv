@@ -3,10 +3,10 @@
  https://t.me/jaskon12
 
 # About me
- Aim is to restore knowledge about the front-end development.
+ Aim is to restore knowledge about the front-end development.\
  Have a bit of work experience with Angular, React, Node.js,
-some backend technology.
- Some time ago has completed the Udemy React course.
+some backend technology.\
+ Some time ago has completed the Udemy React course.\
  In my opinion, the strongest sides of me are
 perseverance, ambitions, trainability.
 
@@ -21,7 +21,27 @@ perseverance, ambitions, trainability.
  - PyCharm
 
 # Code examples
- __TODO__
+ ```javascript
+ function generateName() {
+   function randomChar() {
+     return String.fromCharCode(65 + Math.round(Math.random() * 32));
+   }
+   
+   function randomStr() {
+     let str = '';
+     for (let i = 0; i < 6; i++) {
+       str += randomChar();
+     }
+     return str;
+   }
+   
+   let str;
+   do {
+     str = randomStr();
+   } while (photoManager.nameExists(str));
+   return str;
+ }
+ ```
 
 # Experience
  Working experience in IBM, IBA projects using above listed technologies
@@ -34,4 +54,6 @@ and some others
  - Python institute certificate
 
 # English
- __TODO__
+ __B1__\
+ Individual classes in conversational English\
+ Communication with the customer
