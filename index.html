@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yauheni Arlou</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <p class="header-text">Participant CV</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <aside>
+        <img src="assets/cv_photo.jpeg" class="cv_photo" alt="Participant photo">
+        <nav>
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#codeExamples">Code examples</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <section id="contacts" class="cv-block">
+          <h1>Yauheni Arlou</h1>
+          <ul>
+            <li>jaskon97@gmail.com</li>
+            <li>https://t.me/jaskon12</li>
+          </ul>
+        </section>
+
+        <section id="about" class="cv-block">
+          <h1>About me</h1>
+          Aim is to restore knowledge about the front-end development.
+          <br>
+          Have a bit of work experience with Angular, React, Node.js,
+          some backend technology.
+          <br>
+          Some time ago has completed the Udemy React course.
+          <br>
+          In my opinion, the strongest sides of me are
+          perseverance, ambitions, trainability.
+        </section>
+
+        <section id="skills" class="cv-block">
+          <h1>Skills</h1>
+          <ul>
+            <li>HTML, JS, TS, CSS, SCSS</li>
+            <li>React, Angular, Node.js, Express.js</li>
+            <li>VSCode, WebStorm, Browser dev tools</li>
+          </ul>
+        </section>
+
+        <section class="cv-block">
+          <h3>Currently working with:</h3>
+          <ul>
+            <li>Python, SQL</li>
+            <li>Flask</li>
+            <li>PyCharm</li>
+          </ul>
+        </section>
+
+        <section id="codeExamples" class="cv-block">
+          <h1>Code examples</h1>
+          <pre>
+function generateName() {
+  function randomChar() {
+    return String.fromCharCode(65 + Math.round(Math.random() * 32));
+  }
+
+  function randomStr() {
+    let str = '';
+    for (let i = 0; i &lt; 6; i++) {
+      str += randomChar();
+    }
+    return str;
+  }
+
+  let str;
+  do {
+    str = randomStr();
+  } while (photoManager.nameExists(str));
+  return str;
+}
+          </pre>
+        </section>
+
+        <section id="experience" class="cv-block">
+          <h1>Experience</h1>
+          Working experience in IBM, IBA projects using above listed technologies and some others
+        </section>
+
+        <section id="education" class="cv-block">
+          <h1>Education</h1>
+          <ul>
+            <li>Graduate of the Gomel State University</li>
+            <li>Internal IBA courses</li>
+            <li>Udemy React course</li>
+            <li>Python institute certificate</li>
+          </ul>
+        </section>
+
+        <section id="english" class="cv-block">
+          <h1>English</h1>
+          Level <strong>B1</strong>
+          <br>
+          Individual classes in conversational English
+          <br>
+          Communication with the customer
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="https://github.com/Jaskon">Github profile</a>
+          <br>
+          2021
+        </div>
+        <div>
+          Created for <a href="https://rs.school/js/">rsschool course</a>
+        </div>
+        <div>
+          <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" width="90">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
