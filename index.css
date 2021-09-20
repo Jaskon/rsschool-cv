@@ -14,8 +14,9 @@ ul {
     background-color: rgba(0, 0, 0, .04);
     height: 100%;
     margin: auto;
+    max-width: 60rem;
     padding: 1rem;
-    width: 60rem;
+    width: 100%;
 }
 
 
