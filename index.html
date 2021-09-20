@@ -7,31 +7,41 @@
   <!-- Libraries -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
 
+  <div id="overlay" class="overlay"></div>
+
   <header>
     <div class="container">
+      <div id="burger-menu" class="burger-menu">
+        <div class="burger-menu-line"></div>
+        <div class="burger-menu-line"></div>
+        <div class="burger-menu-line"></div>
+      </div>
       <p class="header-text">Participant CV</p>
     </div>
   </header>
 
   <div class="content">
     <div class="container">
-      <aside>
-        <img src="assets/cv_photo.jpeg" class="cv_photo" alt="Participant photo">
-        <nav>
-          <ul>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#codeExamples">Code examples</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#english">English</a></li>
-          </ul>
-        </nav>
+      <aside id="side-menu" class="side-menu">
+        <div>
+          <img src="assets/cv_photo.jpeg" class="cv-photo" alt="Participant photo">
+          <nav>
+            <ul>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#codeExamples">Code examples</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#english">English</a></li>
+            </ul>
+          </nav>
+        </div>
       </aside>
 
       <main>
@@ -106,6 +116,55 @@ function generateName() {
           Working experience in IBM, IBA projects using above listed technologies and some others
         </section>
 
+        <section id="projects" class="cv-block">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <a href="https://jaskon.github.io/virtual-piano-rsschool/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/piano-screenshot.PNG" alt="Virtual piano project screenshot">
+              <div class="project-details">
+                <strong>Virtual piano</strong>
+                <p class="project-description">A virtual piano, completed for one of the previous
+                  rsschool course years, without participating the course itself.
+                  <br>Uses js audio api for sounds playing, data attributes for accessing html data from js</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">JS Audio</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://jaskon.github.io/clock/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/clock-screenshot.PNG" alt="JS clock project screenshot">
+              <div class="project-details">
+                <strong>JS clock</strong>
+                <p class="project-description">JS canvas project, created by myself, for myself, without a reason.
+                  The main idea was to try out some canvas libraries and learn how to deal with animations</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">Canvas</div>
+                  <div class="project-skill lib">Konva.js</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://jaskon.github.io/march8/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/march8-screenshot.PNG" alt="March eight project screenshot">
+              <div class="project-details">
+                <strong>March8</strong>
+                <p class="project-description">A simple JS project for trying to simulate a drag&drop using
+                  mouse and touch events. So it works correctly on mobiles and recognizes several simultaneous
+                  touches, drags and drops, for each dragged element separately</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">Mobile</div>
+                  <div class="project-skill">Drag&drop</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
         <section id="education" class="cv-block">
           <h2>Education</h2>
           <ul>
@@ -145,6 +204,9 @@ function generateName() {
       </div>
     </div>
   </footer>
+
+
+  <script src="index.js"></script>
 
 </body>
 </html>
