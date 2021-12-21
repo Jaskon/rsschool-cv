@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Yauheni Arlou</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Libraries -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+
+  <div id="overlay" class="overlay"></div>
+
+  <header>
+    <div class="container">
+      <div id="burger-menu" class="burger-menu">
+        <div class="burger-menu-line"></div>
+        <div class="burger-menu-line"></div>
+        <div class="burger-menu-line"></div>
+      </div>
+      <p class="header-text">Participant CV</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="container">
+      <aside id="side-menu" class="side-menu">
+        <div>
+          <img src="assets/cv_photo.jpeg" class="cv-photo" alt="Participant photo">
+          <nav>
+            <ul>
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#codeExamples">Code examples</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#english">English</a></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <main>
+        <section id="contacts" class="cv-block">
+          <h1>Yauheni Arlou</h1>
+          <ul>
+            <li>jaskon97@gmail.com</li>
+            <li>https://t.me/jaskon12</li>
+          </ul>
+        </section>
+
+        <section id="about" class="cv-block">
+          <h2>About me</h2>
+          Aim is to restore knowledge about the front-end development.
+          <br>
+          Have a bit of work experience with Angular, React, Node.js,
+          some backend technology.
+          <br>
+          Some time ago has completed the Udemy React course.
+          <br>
+          In my opinion, the strongest sides of me are
+          perseverance, ambitions, trainability.
+        </section>
+
+        <section id="skills" class="cv-block">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML, JS, TS, CSS, SCSS</li>
+            <li>React, Angular, Node.js, Express.js</li>
+            <li>VSCode, WebStorm, Browser dev tools</li>
+          </ul>
+        </section>
+
+        <section class="cv-block">
+          <h3>Currently working with:</h3>
+          <ul>
+            <li>Python, SQL</li>
+            <li>Flask</li>
+            <li>PyCharm</li>
+          </ul>
+        </section>
+
+        <section id="codeExamples" class="cv-block">
+          <h2>Code examples</h2>
+          <pre>
+            <code class="language-js">
+function generateName() {
+  function randomChar() {
+    return String.fromCharCode(65 + Math.round(Math.random() * 32));
+  }
+
+  function randomStr() {
+    let str = '';
+    for (let i = 0; i &lt; 6; i++) {
+      str += randomChar();
+    }
+    return str;
+  }
+
+  let str;
+  do {
+    str = randomStr();
+  } while (photoManager.nameExists(str));
+  return str;
+}
+            </code>
+          </pre>
+        </section>
+
+        <section id="experience" class="cv-block">
+          <h2>Experience</h2>
+          Working experience in IBM, IBA projects using above listed technologies and some others
+        </section>
+
+        <section id="projects" class="cv-block">
+          <h2>Projects</h2>
+          <div class="project-list">
+            <a href="https://jaskon.github.io/virtual-piano-rsschool/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/piano-screenshot.PNG" alt="Virtual piano project screenshot">
+              <div class="project-details">
+                <strong>Virtual piano</strong>
+                <p class="project-description">A virtual piano, completed for one of the previous
+                  rsschool course years, without participating the course itself.
+                  <br>Uses js audio api for sounds playing, data attributes for accessing html data from js</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">JS Audio</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://jaskon.github.io/clock/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/clock-screenshot.PNG" alt="JS clock project screenshot">
+              <div class="project-details">
+                <strong>JS clock</strong>
+                <p class="project-description">JS canvas project, created by myself, for myself, without a reason.
+                  The main idea was to try out some canvas libraries and learn how to deal with animations</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">Canvas</div>
+                  <div class="project-skill lib">Konva.js</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://jaskon.github.io/march8/" target="_blank" class="project-item">
+              <img class="project-img" src="assets/march8-screenshot.PNG" alt="March eight project screenshot">
+              <div class="project-details">
+                <strong>March8</strong>
+                <p class="project-description">A simple JS project for trying to simulate a drag&drop using
+                  mouse and touch events. So it works correctly on mobiles and recognizes several simultaneous
+                  touches, drags and drops, for each dragged element separately</p>
+                <div class="project-skills">
+                  <div class="project-skill">HTML</div>
+                  <div class="project-skill">JS</div>
+                  <div class="project-skill">Mobile</div>
+                  <div class="project-skill">Drag&drop</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section id="education" class="cv-block">
+          <h2>Education</h2>
+          <ul>
+            <li>Graduate of the Gomel State University</li>
+            <li>Internal IBA courses</li>
+            <li>Udemy React course</li>
+            <li>Python institute certificate</li>
+          </ul>
+        </section>
+
+        <section id="english" class="cv-block">
+          <h2>English</h2>
+          Level <strong>B1</strong>
+          <br>
+          Individual classes in conversational English
+          <br>
+          Communication with the customer
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <a href="https://github.com/Jaskon">Github profile</a>
+          <br>
+          2021
+        </div>
+        <div>
+          Created for <a href="https://rs.school/js/">rsschool course</a>
+        </div>
+        <div>
+          <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" width="90">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js"></script>
+
+</body>
+</html>
